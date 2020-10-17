@@ -2,9 +2,9 @@ import React from 'react';
 import {Pagination } from 'react-bootstrap';
 
 export default function jobPagination( {page, setPage, hasNextPage} ) {
-    const adjustPage = (amount) => {
+    function adjustPage(amount) {
         setPage(prevPage => prevPage + amount)
-    }
+    } 
 
     return (
         <Pagination>
