@@ -25,7 +25,7 @@ function App() {
     <Container className="my-4">
       <h1 className="mb-4">Github Jobs</h1>
       <SearchForm params={params} onParamChange={handleParamChange} />
-      <JobPagination page={page} setpage={setPage} hasNextPage={hasNextPage}/>
+      <JobPagination page={page} setPage={setPage} hasNextPage={hasNextPage}/>
       {loading && <h1>Loading...</h1>}
       {error && <h1>An error occured!</h1>}
       {jobs.map(job => {
